@@ -11,15 +11,18 @@ TODO : You can return the answer in any order.
 * Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
-var twoSum = function(nums, target) {
+ var twoSum = function(nums, target) {
     let sum=0;
-    let index = []
-    for(let i=0;i<nums.length;i++){
-        sum = 0;
-        for (let j=i;j<nums.length;j++){
+    let index = [];
+    for(let i=0;i<nums.length-1;i++){
+        sum = nums[i];
+        for (let j=i+1;j<nums.length;j++){
             sum+=nums[j];
             if (sum===target){
-                return [i,j]
+                return [i,j];
+            }
+            else{
+                sum =nums[i];
             }
             
         }
