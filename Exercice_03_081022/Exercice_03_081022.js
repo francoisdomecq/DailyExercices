@@ -34,3 +34,4 @@ var pascalTriangle = function (numRows) {
 module.exports = {
     pascalTriangle,
 }
+ 
