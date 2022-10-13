@@ -15,25 +15,22 @@ TODO : In Pascal's triangle, each number is the sum of the two numbers directly 
     ]
 */
 
-var pascalTriangle = function(numRows) {
-    let array=[[1]];
-    for(let i=0;i<numRows-1;i++){
-        let precedentLine=array[i];
-        let newLine=[];
-        for(let j=0;j<precedentLine.length+1;j++){
-            if(j>0 && j<precedentLine.length){
-                let sum=precedentLine[j-1]+precedentLine[j];
-                newLine.push(sum);
-            }
-            else 
-                newLine.push(1);
+var pascalTriangle = function (numRows) {
+    let array = [[1]]
+    for (let i = 0; i < numRows - 1; i++) {
+        let precedentLine = array[i]
+        let newLine = []
+        for (let j = 0; j < precedentLine.length + 1; j++) {
+            if (j > 0 && j < precedentLine.length) {
+                let sum = precedentLine[j - 1] + precedentLine[j]
+                newLine.push(sum)
+            } else newLine.push(1)
         }
-        array.push(newLine);
-        }
-    return array;
- }
+        array.push(newLine)
+    }
+    return array
+}
 
-
-module.exports={
-    pascalTriangle
+module.exports = {
+    pascalTriangle,
 }

@@ -11,20 +11,20 @@ TODO Given an array of integers and an integer k, you need to find the total num
 */
 
 function getSubArrayNumber(arr, k) {
-  let numbersOfArray = 0;
-  let sum = 0;
-  for(let i=0;i<arr.length;i++){
-    sum=0;
-    for(let j=i;j<arr.length;j++){
-      sum+=arr[j];
-      if(sum===k){
-        numbersOfArray++;
-      }
+    let numbersOfArray = 0
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum = 0
+        for (let j = i; j < arr.length; j++) {
+            sum += arr[j]
+            if (sum === k) {
+                numbersOfArray++
+            }
+        }
     }
-  }
-  return numbersOfArray;
+    return numbersOfArray
 }
 
 module.exports = {
-  getSubArrayNumber,
-};
+    getSubArrayNumber,
+}

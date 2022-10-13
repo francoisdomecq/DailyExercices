@@ -14,17 +14,15 @@ TODO : You must write an algorithm with O(log n) runtime complexity.
 * Output: [-1,-1]
 */
 
-var searchRange = function(nums, target) {
-    const index=[];
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]===target){
-            index.push(i);
+var searchRange = function (nums, target) {
+    const index = []
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === target) {
+            index.push(i)
         }
     }
-    if(index.length>0)
-        return [index[0],index[index.length-1]];
-    else
-        return [-1,-1];
-};
+    if (index.length > 0) return [index[0], index[index.length - 1]]
+    else return [-1, -1]
+}
 
-module.exports={searchRange}
+module.exports = { searchRange }

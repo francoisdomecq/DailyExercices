@@ -12,16 +12,16 @@ TODO : Do not allocate extra space for another array. You must do this by modify
 * Explanation: Your function should return k = 2, with the first two elements of nums being 2.
 */
 
-var removeElement = function(nums, val) {
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]===val){
-            nums.splice(i,1);
-            i--;
+var removeElement = function (nums, val) {
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === val) {
+            nums.splice(i, 1)
+            i--
         }
     }
-    return nums.length;
-};
+    return nums.length
+}
 
-module.exports={
-    removeElement
+module.exports = {
+    removeElement,
 }

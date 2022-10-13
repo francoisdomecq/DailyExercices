@@ -15,18 +15,17 @@ TODO : Given an integer x, return true if x is palindrome integer.
 * Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 */
 
-var isPalindrome = function(x) {
-    let isPalindromeBoolean = true;
-    if(x<0)
-        return false;
-    var array  = x.toString().split('');
-    for(let i=0;i<array.length;i++){
-        if(array[i]!==array[array.length-i-1])
-            isPalindromeBoolean=false;
+var isPalindrome = function (x) {
+    let isPalindromeBoolean = true
+    if (x < 0) return false
+    var array = x.toString().split('')
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] !== array[array.length - i - 1])
+            isPalindromeBoolean = false
     }
-    return isPalindromeBoolean;
-};
+    return isPalindromeBoolean
+}
 
-module.exports={
-    isPalindrome
+module.exports = {
+    isPalindrome,
 }
