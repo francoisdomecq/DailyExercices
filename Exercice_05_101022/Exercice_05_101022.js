@@ -28,3 +28,4 @@ function getSubArrayNumber(arr, k) {
 module.exports = {
     getSubArrayNumber,
 }
+ 
