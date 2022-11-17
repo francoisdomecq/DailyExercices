@@ -19,7 +19,7 @@ var isPalindrome = function (x) {
     let isPalindromeBoolean = true
     if (x < 0) return false
     var array = x.toString().split('')
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length/2; i++) {
         if (array[i] !== array[array.length - i - 1])
             isPalindromeBoolean = false
     }
