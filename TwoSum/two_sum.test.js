@@ -1,4 +1,4 @@
-const { twoSum } = require('./Exercice_01_061022')
+const { twoSum } = require('./two_sum')
 
 describe('twoSum', () => {
     it('should work :', () => {

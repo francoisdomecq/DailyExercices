@@ -1,4 +1,4 @@
-const { lengthOfLongestSubstring } = require('./Exercice_02_071022')
+const { lengthOfLongestSubstring } = require('./length_of_longest_substring')
 
 describe('lengthOfLongestSubstring', () => {
     it('should work :', () => {
