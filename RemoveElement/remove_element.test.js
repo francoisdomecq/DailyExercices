@@ -1,4 +1,4 @@
-const { removeElement } = require('./Exercice_07_121022')
+const { removeElement } = require('./remove_element')
 
 describe('removeElement', () => {
     it('should work :)', () => {

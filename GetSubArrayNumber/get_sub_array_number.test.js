@@ -1,4 +1,4 @@
-const { getSubArrayNumber } = require('./Exercice_05_101022')
+const { getSubArrayNumber } = require('./get_sub_array_number')
 
 describe('getSubArrayNumber', () => {
     it('should work :)', () => {

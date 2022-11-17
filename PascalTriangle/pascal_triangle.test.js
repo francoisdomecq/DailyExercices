@@ -1,4 +1,4 @@
-var { pascalTriangle } = require('./Exercice_03_081022')
+var { pascalTriangle } = require('./pascal_triangle')
 
 describe('pascalTriangle', () => {
     it('should work :', () => {

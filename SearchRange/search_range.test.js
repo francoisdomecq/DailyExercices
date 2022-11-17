@@ -1,4 +1,4 @@
-var { searchRange } = require('./Exercice_04_091022')
+var { searchRange } = require('./search_range')
 
 describe('searchRange', () => {
     it('should work : ', () => {
